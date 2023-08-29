@@ -1,0 +1,800 @@
+08-24 16:12 DEBUG prawcore Fetching: GET https://oauth.reddit.com/r/twoxchromosomes/hot
+08-24 16:12 DEBUG prawcore Data: None
+08-24 16:12 DEBUG prawcore Params: {'limit': 25, 'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): www.reddit.com:443
+08-24 16:12 DEBUG urllib3.connectionpool https://www.reddit.com:443 "POST /api/v1/access_token HTTP/1.1" 200 657
+08-24 16:12 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): oauth.reddit.com:443
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /r/twoxchromosomes/hot?limit=25&raw_json=1 HTTP/1.1" 200 36759
+08-24 16:12 DEBUG prawcore Response: 200 (36759 bytes)
+08-24 16:12 DEBUG prawcore Fetching: GET https://oauth.reddit.com/comments/fejj7u/
+08-24 16:12 DEBUG prawcore Data: None
+08-24 16:12 DEBUG prawcore Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /comments/fejj7u/?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 5349
+08-24 16:12 DEBUG prawcore Response: 200 (5349 bytes)
+08-24 16:12 DEBUG prawcore Fetching: GET https://oauth.reddit.com/comments/142kt1l/
+08-24 16:12 DEBUG prawcore Data: None
+08-24 16:12 DEBUG prawcore Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /comments/142kt1l/?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 4082
+08-24 16:12 DEBUG prawcore Response: 200 (4082 bytes)
+08-24 16:12 DEBUG prawcore Fetching: GET https://oauth.reddit.com/comments/1601iet/
+08-24 16:12 DEBUG prawcore Data: None
+08-24 16:12 DEBUG prawcore Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /comments/1601iet/?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 93789
+08-24 16:12 DEBUG prawcore Response: 200 (93789 bytes)
+08-24 16:12 DEBUG prawcore Fetching: GET https://oauth.reddit.com/comments/16028tb/
+08-24 16:12 DEBUG prawcore Data: None
+08-24 16:12 DEBUG prawcore Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /comments/16028tb/?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 112065
+08-24 16:12 DEBUG prawcore Response: 200 (112065 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxklhqg,jxksktc,jxle490,jxk6emy,jxlkf1x,jxk7ghw,jxka8ba,jxk6ps5,jxk8vrj,jxke75c,jxk9g0y,jxkaprf,jxka8e7,jxkb79s,jxk991f,jxkaqbe,jxk5use,jxk731d,jxkhozc,jxkjz4h,jxk3tay,jxkcwbv,jxkcdue,jxki2hf,jxkjklr,jxk62td,jxklgl8,jxk5ofq,jxka22a,jxkgkjk,jxkaocn,jxkb1ob,jxkcdr4,jxkchy7,jxkcwr2,jxkbaky,jxkdt3m,jxkgyky,jxkj9op,jxkaf9i,jxkb24x,jxkk5aq,jxk6n8s,jxkjtx1,jxkkg4c,jxk9w85,jxkyejd,jxkkdxz,jxklxuz,jxl0k07,jxkjn6n,jxlenx2,jxkr9uo,jxkmi6o,jxkkkyv,jxksjor,jxl1zf3,jxkmj8u,jxl43r5,jxkyspb,jxl052j,jxk7y7q,jxl4pwc,jxladgq,jxkgfjp,jxkjhh6,jxkl2uh,jxkbue0,jxkovwd,jxklvn3,jxkjnb7,jxl4vx1,jxklnxh,jxklg8q,jxkh0vz,jxkjxbh,jxkvp6z,jxklo2c,jxkn9pk,jxkj94j,jxkezuc,jxkda9s,jxkm437,jxkobgu,jxkuier,jxklyv2,jxkk6iu,jxkjwg7,jxkf8gr,jxkgjmi,jxkj6yl,jxkb9y4,jxkhgu4,jxkhudy,jxky5i6,jxkyqw7,jxkcjou,jxknqi0,jxkstvk,jxkl27i,jxkrc6z,jxkmtjc,jxl4kjv,jxkj2na,jxl3g5a,jxklow7,jxku3wl,jxl0es7,jxl7czs,jxl5b8i,jxl6exb,jxlgu5d,jxlhk7g,jxkx2lj,jxkvvqz,jxl082u,jxl650r,jxknr7z,jxl1asz,jxlgqjo,jxl5rpf,jxlignl,jxlhehd,jxl1h3f,jxlf032,jxlfhgn,jxl6f7n,jxlj6yx,jxl6fv9,jxlhf3x,jxlmdf7,jxkmlqm,jxkngtz,jxl9oje,jxlkq3x,jxlftep,jxklu8k,jxkp5hd,jxkcatl,jxkujv0,jxkszux,jxks4x0,jxlkhwh,jxkpqo7,jxlfwpx,jxlm87k,jxlcx3n,jxkolsf,jxkm472,jxl82p9,jxkzysl,jxknv57,jxkoa14,jxkkjd2,jxldmv7,jxl44ny,jxkol4g,jxldgio,jxl6wkl,jxkouyd,jxkqy5d,jxl3ahc,jxkpj0c,jxlk081,jxkvl8k,jxkne1m,jxkzwrz,jxkz3of,jxl57qw,jxl8zib,jxkppbv,jxl18c3,jxlg9z6,jxl0idd,jxklw16,jxklhyd,jxkjwt8,jxkumly,jxkgoou,jxl7c4o,jxko65p,jxkkhw7,jxknhfz,jxkjii3,jxl6bcb,jxlge5g,jxl0aes,jxli6r2,jxkz0kt,jxlgqtl,jxljw7n,jxldqje,jxlcd2c,jxl3zdq,jxl6csc,jxl4av3,jxlh8r6,jxlc36m,jxlfstn,jxkmv2d,jxkzxgl,jxl5lre,jxl1y1q,jxl0h5v,jxlcs9g,jxlfop8,jxljdtb,jxldii3,jxl87lz,jxlf90t,jxlkb1n,jxlimpd,jxli0mt,jxlhbsl,jxl4pfy,jxl7upo,jxlht8e,jxl6opc,jxkylqy,jxl8349,jxld2em,jxlllao,jxlhos0,jxknuq3,jxkz70a,jxlho5v,jxku3ql,jxlcx5o,jxkzqip,jxlmb6m,jxl88zz,jxlkrjc,jxlaap5,jxl3yuq,jxldbr1,jxl8eft,jxl0zvq,jxl61kq,jxlcmfn,jxlgjqi,jxlhaam,jxlg0fh,jxl0aoj,jxkvu3z,jxkxv0c,jxkzitp,jxlg5bc,jxlmbas,jxl6fih,jxlj6p0,jxljqoa,jxl3xsi,jxlcfsk,jxl6bxs,jxlir2t,jxlh81v,jxlahjq'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 16794
+08-24 16:12 DEBUG prawcore Response: 200 (16794 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkngtz,jxknhfz,jxknqi0,jxko65p,jxknv57,jxknr7z,jxknuq3,jxkszux,jxkouyd,jxkolsf,jxkobgu,jxkoa14,jxkppbv,jxkqy5d,jxkol4g,jxkyejd,jxkz70a,jxkp5hd,jxl052j,jxku3ql,jxkr9uo,jxkx2lj,jxkuier,jxkovwd,jxl4vx1,jxkvl8k,jxkpqo7,jxl0es7,jxkumly,jxks4x0,jxkpj0c,jxl3xsi,jxl0aoj,jxl1zf3,jxl082u,jxkujv0,jxkstvk,jxl3ahc,jxl0k07,jxladgq,jxku3wl,jxkvp6z,jxksjor,jxl0zvq,jxkzwrz,jxl7c4o,jxky5i6,jxl3g5a,jxkxv0c,jxlaap5,jxl6bcb,jxl1y1q,jxkylqy,jxkvu3z,jxl0aes,jxljqoa,jxl3zdq,jxkzxgl,jxkvvqz,jxkzysl,jxkz0kt,jxkzqip,jxkrc6z,jxl4kjv,jxl5rpf,jxl4pfy,jxl7czs,jxl43r5,jxldgio,jxl7upo,jxl8349,jxl6wkl,jxld2em,jxl4pwc,jxl1asz,jxl5b8i,jxl650r,jxl6exb,jxl4av3,jxlcd2c,jxlcx3n,jxl6opc,jxl61kq,jxkyqw7,jxkzitp,jxlhaam,jxkz3of,jxlfstn,jxlfop8,jxl6csc,jxl82p9,jxlgqjo,jxldmv7,jxl18c3,jxl57qw,jxl6fv9,jxl88zz,jxl6f7n,jxl87lz,jxlgu5d,jxlcmfn,jxlf90t,jxlhf3x,jxlenx2,jxl6bxs,jxl44ny,jxl5lre,jxlh81v,jxlfwpx,jxli6r2,jxlg0fh,jxlm87k,jxlkb1n,jxlkrjc,jxlhehd,jxlftep,jxl3yuq,jxl1h3f,jxkyspb,jxlimpd,jxlmb6m,jxl0h5v,jxlhos0,jxldii3,jxl6fih,jxl0idd,jxlmdf7,jxljdtb,jxlgqtl,jxlhbsl,jxlhk7g,jxlmbas,jxlkq3x,jxlho5v,jxlcx5o,jxlc36m,jxlllao,jxlir2t,jxlk081,jxlge5g,jxlj6yx,jxlg9z6,jxlfhgn,jxl8zib,jxlj6p0,jxljw7n,jxlignl,jxlcs9g,jxlg5bc,jxl8eft,jxli0mt,jxlkhwh,jxldqje,jxlh8r6,jxlahjq,jxlf032,jxl9oje,jxlcfsk,jxlgjqi,jxlht8e,jxldbr1'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 17615
+08-24 16:12 DEBUG prawcore Response: 200 (17615 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxl7upo,jxl82p9,jxl87lz,jxl8349,jxlcs9g,jxl88zz,jxl9oje,jxl8zib,jxlcfsk,jxldbr1,jxldmv7,jxlc36m,jxl8eft,jxladgq,jxlg9z6,jxlcx3n,jxlaap5,jxld2em,jxlge5g,jxlfstn,jxlg0fh,jxlmb6m,jxlf90t,jxlf032,jxldii3,jxlcd2c,jxlftep,jxlcmfn,jxlcx5o,jxlhbsl,jxlgjqi,jxlg5bc,jxldqje,jxlfop8,jxlahjq,jxlho5v,jxlgu5d,jxlgqtl,jxlimpd,jxlhehd,jxlm87k,jxlj6yx,jxljdtb,jxlmbas,jxlkb1n,jxlk081,jxlhos0,jxlhk7g,jxlh81v,jxli6r2,jxlkhwh,jxlht8e,jxlgqjo,jxlh8r6,jxldgio,jxli0mt,jxlkrjc,jxljw7n,jxlir2t,jxljqoa,jxlhf3x,jxlignl,jxlkq3x,jxlmdf7,jxlj6p0,jxlfhgn,jxlllao,jxlfwpx,jxlhaam,jxlenx2'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 12338
+08-24 16:12 DEBUG prawcore Response: 200 (12338 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxl33w7,jxkioqv,jxkzinr,jxk94nc,jxl2109,jxl3n1e,jxkg7pv,jxlfxq2,jxl6bj4,jxl0art,jxl2ho0,jxlbuuj,jxllkpi,jxlk1y9,jxki3ki,jxkg6ji,jxl1uo2,jxkkc89,jxkpgn4,jxkmfr6,jxkuu6m,jxktuha,jxldnzy,jxliooc,jxl1547,jxkt1tn,jxli94s,jxlf4vh,jxkpcne,jxlgpkt,jxl5b53,jxkpmp9,jxkwq3f,jxknns8,jxkzeti,jxlk31m,jxktswo,jxlcu56,jxlm3vr'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 8116
+08-24 16:12 DEBUG prawcore Response: 200 (8116 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxlgthr,jxljufa'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 2262
+08-24 16:12 DEBUG prawcore Response: 200 (2262 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkwnoy,jxkptm4,jxl5xjr,jxkw9nt,jxl47t3,jxl7rbt,jxkx9dz,jxlmawm'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 2094
+08-24 16:12 DEBUG prawcore Response: 200 (2094 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkxxcz,jxlhp9a,jxliuc3'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1649
+08-24 16:12 DEBUG prawcore Response: 200 (1649 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkjlj0,jxlgnwc,jxl0p8l,jxl4cot'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 2058
+08-24 16:12 DEBUG prawcore Response: 200 (2058 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkpo2c'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1909
+08-24 16:12 DEBUG prawcore Response: 200 (1909 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxlcj9u,jxllwxs,jxllf7p,jxlhm60,jxldavp'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1545
+08-24 16:12 DEBUG prawcore Response: 200 (1545 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxl4ci0,jxlb7vv,jxldj6j,jxl8r47'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 2034
+08-24 16:12 DEBUG prawcore Response: 200 (2034 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxlfn5g,jxljj16,jxlm6im,jxkyjao'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1913
+08-24 16:12 DEBUG prawcore Response: 200 (1913 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkwl7i'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1397
+08-24 16:12 DEBUG prawcore Response: 200 (1397 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkqf8q'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1210
+08-24 16:12 DEBUG prawcore Response: 200 (1210 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxljbpy,jxleu0w'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1223
+08-24 16:12 DEBUG prawcore Response: 200 (1223 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxlae2q'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1161
+08-24 16:12 DEBUG prawcore Response: 200 (1161 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxl54oe,jxlkrz6'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 829
+08-24 16:12 DEBUG prawcore Response: 200 (829 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkhnby'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 905
+08-24 16:12 DEBUG prawcore Response: 200 (905 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxl6r95'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1010
+08-24 16:12 DEBUG prawcore Response: 200 (1010 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxku3w8'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 940
+08-24 16:12 DEBUG prawcore Response: 200 (940 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxl6c76,jxl6h10'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 961
+08-24 16:12 DEBUG prawcore Response: 200 (961 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxl5t88,jxlkikt'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1018
+08-24 16:12 DEBUG prawcore Response: 200 (1018 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxlj4g0'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1769
+08-24 16:12 DEBUG prawcore Response: 200 (1769 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxl1nzw'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1542
+08-24 16:12 DEBUG prawcore Response: 200 (1542 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxlc6tm'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 795
+08-24 16:12 DEBUG prawcore Response: 200 (795 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkzujq'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 825
+08-24 16:12 DEBUG prawcore Response: 200 (825 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxl3bh2'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 795
+08-24 16:12 DEBUG prawcore Response: 200 (795 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxlkf1h'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 955
+08-24 16:12 DEBUG prawcore Response: 200 (955 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxlgbj4'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 995
+08-24 16:12 DEBUG prawcore Response: 200 (995 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxlkway'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 867
+08-24 16:12 DEBUG prawcore Response: 200 (867 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkuxlx'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 980
+08-24 16:12 DEBUG prawcore Response: 200 (980 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxlcjz2'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 819
+08-24 16:12 DEBUG prawcore Response: 200 (819 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxl8qds'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 974
+08-24 16:12 DEBUG prawcore Response: 200 (974 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxlea9o'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 48
+08-24 16:12 DEBUG prawcore Response: 200 (48 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkxg75'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1061
+08-24 16:12 DEBUG prawcore Response: 200 (1061 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkzlqa'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 916
+08-24 16:12 DEBUG prawcore Response: 200 (916 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkzxny'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1013
+08-24 16:12 DEBUG prawcore Response: 200 (1013 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkg6di'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 48
+08-24 16:12 DEBUG prawcore Response: 200 (48 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxlkinc'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 48
+08-24 16:12 DEBUG prawcore Response: 200 (48 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxlgq5y'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 838
+08-24 16:12 DEBUG prawcore Response: 200 (838 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxklrvo'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 883
+08-24 16:12 DEBUG prawcore Response: 200 (883 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxllmj1'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 799
+08-24 16:12 DEBUG prawcore Response: 200 (799 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxllv0s'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 802
+08-24 16:12 DEBUG prawcore Response: 200 (802 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxlgyw7'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 924
+08-24 16:12 DEBUG prawcore Response: 200 (924 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxlhi4x'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 819
+08-24 16:12 DEBUG prawcore Response: 200 (819 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkzfqf'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 911
+08-24 16:12 DEBUG prawcore Response: 200 (911 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkqmeq'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 910
+08-24 16:12 DEBUG prawcore Response: 200 (910 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxlmbso'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 847
+08-24 16:12 DEBUG prawcore Response: 200 (847 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkkmks'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 48
+08-24 16:12 DEBUG prawcore Response: 200 (48 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkye47'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1120
+08-24 16:12 DEBUG prawcore Response: 200 (1120 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxlgy3y'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 48
+08-24 16:12 DEBUG prawcore Response: 200 (48 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxl9rcw'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 799
+08-24 16:12 DEBUG prawcore Response: 200 (799 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxllg0f'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1084
+08-24 16:12 DEBUG prawcore Response: 200 (1084 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxlbvqp'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1422
+08-24 16:12 DEBUG prawcore Response: 200 (1422 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxlbygr'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 48
+08-24 16:12 DEBUG prawcore Response: 200 (48 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxk4bwg'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 48
+08-24 16:12 DEBUG prawcore Response: 200 (48 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxlglxu'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 840
+08-24 16:12 DEBUG prawcore Response: 200 (840 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkpzjk'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 777
+08-24 16:12 DEBUG prawcore Response: 200 (777 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxklvhp'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 48
+08-24 16:12 DEBUG prawcore Response: 200 (48 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkp0fg'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 48
+08-24 16:12 DEBUG prawcore Response: 200 (48 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkymbc'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 828
+08-24 16:12 DEBUG prawcore Response: 200 (828 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxlcmli'), ('link_id', 't3_16028tb'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 864
+08-24 16:12 DEBUG prawcore Response: 200 (864 bytes)
+08-24 16:12 DEBUG prawcore Fetching: GET https://oauth.reddit.com/comments/1605pxl/
+08-24 16:12 DEBUG prawcore Data: None
+08-24 16:12 DEBUG prawcore Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /comments/1605pxl/?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 13107
+08-24 16:12 DEBUG prawcore Response: 200 (13107 bytes)
+08-24 16:12 DEBUG prawcore Fetching: GET https://oauth.reddit.com/comments/15ztx0b/
+08-24 16:12 DEBUG prawcore Data: None
+08-24 16:12 DEBUG prawcore Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /comments/15ztx0b/?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 114965
+08-24 16:12 DEBUG prawcore Response: 200 (114965 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxk9b4g,jxk9wrr'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 4193
+08-24 16:12 DEBUG prawcore Response: 200 (4193 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxl12r8,jxkrc6m,jxl9kem,jxkhchx'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 2279
+08-24 16:12 DEBUG prawcore Response: 200 (2279 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxjovzv'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 2504
+08-24 16:12 DEBUG prawcore Response: 200 (2504 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkit67'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 2099
+08-24 16:12 DEBUG prawcore Response: 200 (2099 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkddw0,jxjdprm,jxkgtje'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1122
+08-24 16:12 DEBUG prawcore Response: 200 (1122 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxj8cdx,jxldcrw'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 48
+08-24 16:12 DEBUG prawcore Response: 200 (48 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxjrw7c'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1100
+08-24 16:12 DEBUG prawcore Response: 200 (1100 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxjdnbp,jxjdp0r'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 48
+08-24 16:12 DEBUG prawcore Response: 200 (48 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkf75v'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1393
+08-24 16:12 DEBUG prawcore Response: 200 (1393 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkkg29,jxkk7tc'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1888
+08-24 16:12 DEBUG prawcore Response: 200 (1888 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkdq87,jxkbg4f'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 948
+08-24 16:12 DEBUG prawcore Response: 200 (948 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxlbtsj'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1195
+08-24 16:12 DEBUG prawcore Response: 200 (1195 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxjp247'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 48
+08-24 16:12 DEBUG prawcore Response: 200 (48 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxjkvx6'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 930
+08-24 16:12 DEBUG prawcore Response: 200 (930 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxk8oc2'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 48
+08-24 16:12 DEBUG prawcore Response: 200 (48 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxjnpqt'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 861
+08-24 16:12 DEBUG prawcore Response: 200 (861 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxjhhxa'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 48
+08-24 16:12 DEBUG prawcore Response: 200 (48 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxk4s22'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 842
+08-24 16:12 DEBUG prawcore Response: 200 (842 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkt73h'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 48
+08-24 16:12 DEBUG prawcore Response: 200 (48 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxjnqfx'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 48
+08-24 16:12 DEBUG prawcore Response: 200 (48 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxjgl3b'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 48
+08-24 16:12 DEBUG prawcore Response: 200 (48 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkcx35'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 48
+08-24 16:12 DEBUG prawcore Response: 200 (48 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxllju2'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 924
+08-24 16:12 DEBUG prawcore Response: 200 (924 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkfe4q'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 831
+08-24 16:12 DEBUG prawcore Response: 200 (831 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkow0p'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 800
+08-24 16:12 DEBUG prawcore Response: 200 (800 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkbvsv'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 875
+08-24 16:12 DEBUG prawcore Response: 200 (875 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxjzh6f'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 48
+08-24 16:12 DEBUG prawcore Response: 200 (48 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkctlo'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 885
+08-24 16:12 DEBUG prawcore Response: 200 (885 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxjdi03'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 48
+08-24 16:12 DEBUG prawcore Response: 200 (48 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxlhjnx'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 858
+08-24 16:12 DEBUG prawcore Response: 200 (858 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkg44p'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 810
+08-24 16:12 DEBUG prawcore Response: 200 (810 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxk1s4f'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 914
+08-24 16:12 DEBUG prawcore Response: 200 (914 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxje397'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 48
+08-24 16:12 DEBUG prawcore Response: 200 (48 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkydtx'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 938
+08-24 16:12 DEBUG prawcore Response: 200 (938 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxl4cuc'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 923
+08-24 16:12 DEBUG prawcore Response: 200 (923 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxjljtj'), ('link_id', 't3_15ztx0b'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 48
+08-24 16:12 DEBUG prawcore Response: 200 (48 bytes)
+08-24 16:12 DEBUG prawcore Fetching: GET https://oauth.reddit.com/comments/15ztx0b/_/jxjxrpc
+08-24 16:12 DEBUG prawcore Data: None
+08-24 16:12 DEBUG prawcore Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /comments/15ztx0b/_/jxjxrpc?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 2917
+08-24 16:12 DEBUG prawcore Response: 200 (2917 bytes)
+08-24 16:12 DEBUG prawcore Fetching: GET https://oauth.reddit.com/comments/15ztx0b/_/jxjnatg
+08-24 16:12 DEBUG prawcore Data: None
+08-24 16:12 DEBUG prawcore Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /comments/15ztx0b/_/jxjnatg?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 3088
+08-24 16:12 DEBUG prawcore Response: 200 (3088 bytes)
+08-24 16:12 DEBUG prawcore Fetching: GET https://oauth.reddit.com/comments/15zxtj2/
+08-24 16:12 DEBUG prawcore Data: None
+08-24 16:12 DEBUG prawcore Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /comments/15zxtj2/?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 39371
+08-24 16:12 DEBUG prawcore Response: 200 (39371 bytes)
+08-24 16:12 DEBUG prawcore Fetching: GET https://oauth.reddit.com/comments/1604r34/
+08-24 16:12 DEBUG prawcore Data: None
+08-24 16:12 DEBUG prawcore Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /comments/1604r34/?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 38504
+08-24 16:12 DEBUG prawcore Response: 200 (38504 bytes)
+08-24 16:12 DEBUG prawcore Fetching: GET https://oauth.reddit.com/comments/15zzuie/
+08-24 16:12 DEBUG prawcore Data: None
+08-24 16:12 DEBUG prawcore Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /comments/15zzuie/?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 15492
+08-24 16:12 DEBUG prawcore Response: 200 (15492 bytes)
+08-24 16:12 DEBUG prawcore Fetching: GET https://oauth.reddit.com/comments/15zgzb9/
+08-24 16:12 DEBUG prawcore Data: None
+08-24 16:12 DEBUG prawcore Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /comments/15zgzb9/?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 154839
+08-24 16:12 DEBUG prawcore Response: 200 (154839 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxhlumd,jxhosa5,jxiu6s1,jxhqpf2,jxhnj0n,jxhnhmk,jxi3gvo,jxhe7ap,jxhvfau,jxhnhz8,jxjd1bf,jxhvzg3,jxhn2pd,jxhlvdr,jxgwoc4,jxhh30q,jxig0h0,jxhuskw,jxhw8dq,jxhve7q,jxhkl8x,jxhimga,jxhh4mn,jxi12ev,jxhx5db,jxhrsw7,jxhf5dn,jxkdzcb,jxhhp8i,jxhncdf,jxhzwx0,jxhtfcb,jxhjmln,jxhoeyc,jxhhkzl,jxhmbch,jxhxg81,jxhgo35,jxht5bi,jxhj5mz,jxik0de,jxiiliq,jxii9yx,jximdvi,jxi5xyt,jxhy87r,jxij8n7,jxhyh3k,jxi0eyg,jxhmpyz,jxhwz4j,jxi5lap,jxhxpgq,jxhwp7b,jxhxega,jxijpun,jxieu2d,jxhz8i8,jxhzqg9,jxiodil,jxhy4kr,jxhut2r,jxht6eo,jxii4bf,jxiq8uy,jxhx7zw,jxhxczr,jxhv4ws,jxi57m7,jxierzv,jxiini8,jxih3f5,jxir3tb,jxic3f0,jxi0uy3,jxiio4k,jxiedx3,jxhw6ta,jxiy0df,jxhwdky,jxhvm8j,jxi0a3e,jxhxlk6,jxhjs6l,jxjynre,jxik95v,jxhwxi6,jxhy448,jxjbzlo,jxhxoi7,jxie83n,jxhuoit,jxj7198,jxhrupn,jxhyf3y,jxix7xg,jxj5tdc,jxij0pf,jxilujj,jxik4ev,jxjv0ay,jxjm5oh,jxiw4xn,jxij0f0,jxir9ru,jxirh07,jxigyou,jxixyn0,jxikujh,jxiulzi,jxifa0j,jxiglf5,jxisosf,jxijx52,jxhqqoq,jxi6r6o,jxix6kw,jxihhqe,jxipmzc,jxiv41j,jxidzbn,jxih71z,jxixyew,jxikrp4,jxioit5,jxiw9fc,jxilkfk,jxiy1jy,jxil2g7,jximo4h,jxiia2b,jxis2im,jxih66y,jxio2tw,jxivo62,jxipdat,jxju4vi,jxjt2od,jxiuful,jxijsvx,jxkbkdv,jxilhdz,jxiqo8y,jxindod,jxiuslj,jxislsu,jxii1j6,jxiszab,jxioagu,jxkjadg,jxighyg,jxkasib,jxibwbo,jxis7xg,jxih69a,jxin2oz,jxjkgn8,jxjw6x2,jxjtvtg,jxjlmxi,jxino8i,jxib53x,jxivdej,jxijkq8,jximh2o,jxl7a9c,jxjxuo2,jxiwi5z,jxigpag,jxj6c56,jxkkclu,jxiwe6z,jxi0xgh,jxjz6tv,jxjoj5j,jxivrdj,jxj2r9y,jxiog24,jxifrsv,jxkvb96,jxipi92,jxkjav1,jxivcnj,jxitvot,jxiby8d,jxjm8l0,jxioh2n,jxio2kz,jxjtrt2,jxjuoup,jxkeb7v,jxilyz2,jxkyckd,jxkc7tu,jxkoc0x,jxjapuy,jxjvbgx,jxl2dsb,jxiozsh,jxhyjwf,jxio7f5,jxk81fi,jxk0vzh,jxjmnr0,jxj9evi,jxirbvv,jxlleuv,jxjap5j,jxlddfk,jxlc3cb,jxjyu7i,jxl2531,jxjlepj,jxjwv4z,jxkgwnw,jxjugrh,jxktgku,jxit5bb,jxjj6ch,jxjplr8,jxllmii,jxjxla2,jxjjnks,jxirpt7,jxizkrr,jxkvyke,jxj24gx,jxkm8mg,jxklrdk,jxkk1aw,jxiz65v,jxixkqe,jxk9qnz,jxihqqe,jxid9ax,jxj76v6,jxlk2sp,jxlgwkf,jxilti3,jxjfjd9,jxjnd5s,jxjhteg,jxj76xy,jxj9k27,jxiehe9,jxll2x9,jxjbj68,jxj61ax,jxjsq19,jxk6h85,jxjm02o,jxioyue,jxjtt0e,jxj6ss9,jxiy5af,jxjwt9d,jxir8qo,jxivbwm,jxksjai,jxlgxhp,jxkjzsa'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 23420
+08-24 16:12 DEBUG prawcore Response: 200 (23420 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxifrsv,jxiglf5,jxighyg,jxii1j6,jxigpag,jxigyou,jxih69a,jxij8n7,jxijx52,jxiio4k,jxik4ev,jxih3f5,jxih66y,jxih71z,jxij0pf,jxijsvx,jxisosf,jxio2kz,jxilyz2,jxikrp4,jxilhdz,jxipi92,jxik95v,jxii4bf,jxihhqe,jxijpun,jxijkq8,jxii9yx,jxij0f0,jxik0de,jxiog24,jximh2o,jxioagu,jxiuslj,jxivo62,jxj61ax,jxiy1jy,jxiodil,jxindod,jxioh2n,jxino8i,jxiqo8y,jxio2tw,jxivrdj,jxiq8uy,jxislsu,jxirpt7,jxiia2b,jxiini8,jxihqqe,jxipdat,jxikujh,jximo4h,jxil2g7,jxivdej,jxix7xg,jxilti3,jxivcnj,jxilkfk,jxilujj,jxin2oz,jxiwe6z,jxj5tdc,jxir8qo,jxiw4xn,jxixyew,jxj6ss9,jxjhteg,jxj6c56,jxj76v6,jxjbzlo,jxju4vi,jxkkclu,jxj7198,jxjfjd9,jxis7xg,jxirbvv,jxirh07,jxiozsh,jxixkqe,jxioit5,jxiy5af,jxiw9fc,jxjlepj,jxiz65v,jxio7f5,jxl2dsb,jxjlmxi,jxjtvtg,jxiszab,jxjjnks,jxjnd5s,jxiuful,jxjplr8,jxj76xy,jxiiliq,jxioyue,jxivbwm,jxit5bb,jxjynre,jxix6kw,jxjmnr0,jxj2r9y,jxiv41j,jxkvb96,jxir3tb,jxksjai,jxiulzi,jxitvot,jxizkrr,jxk6h85,jxj9k27,jxiy0df,jximdvi,jxir9ru,jxjvbgx,jxkk1aw,jxis2im,jxj24gx,jxjuoup,jxjj6ch,jxiwi5z,jxixyn0,jxkbkdv,jxjyu7i,jxjugrh,jxkjzsa,jxlddfk,jxjm8l0,jxktgku,jxlc3cb,jxllmii,jxkjav1,jxjapuy,jxkgwnw,jxlk2sp,jxjtrt2,jxjxuo2,jxjap5j,jxjkgn8,jxkoc0x,jxklrdk,jxlleuv,jxjv0ay,jxjz6tv,jxl7a9c,jxkyckd,jxlgwkf,jxjtt0e,jxlgxhp,jxjoj5j,jxjwt9d,jxj9evi,jxkm8mg,jxjsq19,jxjw6x2,jxk0vzh,jxipmzc,jxkasib,jxll2x9,jxjm02o,jxkvyke,jxkeb7v,jxjbj68,jxl2531,jxk81fi,jxk9qnz,jxjm5oh,jxjt2od,jxkjadg,jxkc7tu,jxjwv4z,jxjxla2'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 31121
+08-24 16:12 DEBUG prawcore Response: 200 (31121 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxj76v6,jxj76xy,jxj9evi,jxjapuy,jxjap5j,jxj9k27,jxjjnks,jxjbj68,jxjj6ch,jxjfjd9,jxjbzlo,jxju4vi,jxjlmxi,jxjnd5s,jxjlepj,jxjwt9d,jxjhteg,jxjmnr0,jxjvbgx,jxjkgn8,jxkasib,jxjxuo2,jxjtt0e,jxk0vzh,jxjuoup,jxjm5oh,jxjm8l0,jxkjav1,jxjplr8,jxjm02o,jxjxla2,jxkeb7v,jxl7a9c,jxjugrh,jxjoj5j,jxjv0ay,jxjt2od,jxjynre,jxk9qnz,jxjtrt2,jxjtvtg,jxkbkdv,jxlleuv,jxjyu7i,jxkvb96,jxlc3cb,jxkyckd,jxlgxhp,jxkc7tu,jxjz6tv,jxl2531,jxk81fi,jxkm8mg,jxjw6x2,jxkkclu,jxl2dsb,jxkk1aw,jxkgwnw,jxjsq19,jxktgku,jxk6h85,jxlgwkf,jxkoc0x,jxkjzsa,jxlddfk,jxll2x9,jxjwv4z,jxlk2sp,jxksjai,jxkvyke,jxkjadg,jxllmii,jxklrdk'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 22390
+08-24 16:12 DEBUG prawcore Response: 200 (22390 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxizoa0,jxhx197,jxhfuan,jxjwc0x'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 2552
+08-24 16:12 DEBUG prawcore Response: 200 (2552 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxjiz1x,jxjdlhc'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1580
+08-24 16:12 DEBUG prawcore Response: 200 (1580 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkuark,jxkyctz'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1471
+08-24 16:12 DEBUG prawcore Response: 200 (1471 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxhr7hb'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1233
+08-24 16:12 DEBUG prawcore Response: 200 (1233 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxjrfox,jxkd0rh'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1102
+08-24 16:12 DEBUG prawcore Response: 200 (1102 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxj18us,jxllz5k'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1169
+08-24 16:12 DEBUG prawcore Response: 200 (1169 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxixsjp'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 935
+08-24 16:12 DEBUG prawcore Response: 200 (935 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxint80'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1023
+08-24 16:12 DEBUG prawcore Response: 200 (1023 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxjirrm'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1137
+08-24 16:12 DEBUG prawcore Response: 200 (1137 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxll1nl'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1248
+08-24 16:12 DEBUG prawcore Response: 200 (1248 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxjk5cl'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 902
+08-24 16:12 DEBUG prawcore Response: 200 (902 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxj97g9'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 877
+08-24 16:12 DEBUG prawcore Response: 200 (877 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkx744'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1284
+08-24 16:12 DEBUG prawcore Response: 200 (1284 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxjl5wv'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 847
+08-24 16:12 DEBUG prawcore Response: 200 (847 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkqp4h'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 912
+08-24 16:12 DEBUG prawcore Response: 200 (912 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxjz3jw'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 1024
+08-24 16:12 DEBUG prawcore Response: 200 (1024 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxl0n64'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 985
+08-24 16:12 DEBUG prawcore Response: 200 (985 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxilvfh'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 48
+08-24 16:12 DEBUG prawcore Response: 200 (48 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxj59b0'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 962
+08-24 16:12 DEBUG prawcore Response: 200 (962 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxizvdn'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 48
+08-24 16:12 DEBUG prawcore Response: 200 (48 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxjuazf'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 825
+08-24 16:12 DEBUG prawcore Response: 200 (825 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxl9exi'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 48
+08-24 16:12 DEBUG prawcore Response: 200 (48 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkc4gm'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 952
+08-24 16:12 DEBUG prawcore Response: 200 (952 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxjt112'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 969
+08-24 16:12 DEBUG prawcore Response: 200 (969 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxjaabz'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 48
+08-24 16:12 DEBUG prawcore Response: 200 (48 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxlk8se'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 885
+08-24 16:12 DEBUG prawcore Response: 200 (885 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxjrztl'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 855
+08-24 16:12 DEBUG prawcore Response: 200 (855 bytes)
+08-24 16:12 DEBUG prawcore Fetching: POST https://oauth.reddit.com/api/morechildren/
+08-24 16:12 DEBUG prawcore Data: [('api_type', 'json'), ('children', 'jxkxi02'), ('link_id', 't3_15zgzb9'), ('sort', 'confidence')]
+08-24 16:12 DEBUG prawcore Params: {'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "POST /api/morechildren/?raw_json=1 HTTP/1.1" 200 894
+08-24 16:12 DEBUG prawcore Response: 200 (894 bytes)
+08-24 16:12 DEBUG prawcore Fetching: GET https://oauth.reddit.com/comments/1604k47/
+08-24 16:12 DEBUG prawcore Data: None
+08-24 16:12 DEBUG prawcore Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /comments/1604k47/?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 5038
+08-24 16:12 DEBUG prawcore Response: 200 (5038 bytes)
+08-24 16:12 DEBUG prawcore Fetching: GET https://oauth.reddit.com/comments/1605dko/
+08-24 16:12 DEBUG prawcore Data: None
+08-24 16:12 DEBUG prawcore Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /comments/1605dko/?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 11403
+08-24 16:12 DEBUG prawcore Response: 200 (11403 bytes)
+08-24 16:12 DEBUG prawcore Fetching: GET https://oauth.reddit.com/comments/15zzzql/
+08-24 16:12 DEBUG prawcore Data: None
+08-24 16:12 DEBUG prawcore Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /comments/15zzzql/?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 10779
+08-24 16:12 DEBUG prawcore Response: 200 (10779 bytes)
+08-24 16:12 DEBUG prawcore Fetching: GET https://oauth.reddit.com/comments/15zzqb9/
+08-24 16:12 DEBUG prawcore Data: None
+08-24 16:12 DEBUG prawcore Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /comments/15zzqb9/?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 2352
+08-24 16:12 DEBUG prawcore Response: 200 (2352 bytes)
+08-24 16:12 DEBUG prawcore Fetching: GET https://oauth.reddit.com/comments/1604yz2/
+08-24 16:12 DEBUG prawcore Data: None
+08-24 16:12 DEBUG prawcore Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /comments/1604yz2/?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 25257
+08-24 16:12 DEBUG prawcore Response: 200 (25257 bytes)
+08-24 16:12 DEBUG prawcore Fetching: GET https://oauth.reddit.com/comments/160413q/
+08-24 16:12 DEBUG prawcore Data: None
+08-24 16:12 DEBUG prawcore Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /comments/160413q/?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 8196
+08-24 16:12 DEBUG prawcore Response: 200 (8196 bytes)
+08-24 16:12 DEBUG prawcore Fetching: GET https://oauth.reddit.com/comments/15zs2dg/
+08-24 16:12 DEBUG prawcore Data: None
+08-24 16:12 DEBUG prawcore Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /comments/15zs2dg/?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 12551
+08-24 16:12 DEBUG prawcore Response: 200 (12551 bytes)
+08-24 16:12 DEBUG prawcore Fetching: GET https://oauth.reddit.com/comments/15zjqxz/
+08-24 16:12 DEBUG prawcore Data: None
+08-24 16:12 DEBUG prawcore Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /comments/15zjqxz/?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 32453
+08-24 16:12 DEBUG prawcore Response: 200 (32453 bytes)
+08-24 16:12 DEBUG prawcore Fetching: GET https://oauth.reddit.com/comments/15zmkkc/
+08-24 16:12 DEBUG prawcore Data: None
+08-24 16:12 DEBUG prawcore Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /comments/15zmkkc/?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 21786
+08-24 16:12 DEBUG prawcore Response: 200 (21786 bytes)
+08-24 16:12 DEBUG prawcore Fetching: GET https://oauth.reddit.com/comments/15zmkkc/_/jxkmiko
+08-24 16:12 DEBUG prawcore Data: None
+08-24 16:12 DEBUG prawcore Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /comments/15zmkkc/_/jxkmiko?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 2502
+08-24 16:12 DEBUG prawcore Response: 200 (2502 bytes)
+08-24 16:12 DEBUG prawcore Fetching: GET https://oauth.reddit.com/comments/1607b96/
+08-24 16:12 DEBUG prawcore Data: None
+08-24 16:12 DEBUG prawcore Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /comments/1607b96/?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 3279
+08-24 16:12 DEBUG prawcore Response: 200 (3279 bytes)
+08-24 16:12 DEBUG prawcore Fetching: GET https://oauth.reddit.com/comments/160bmla/
+08-24 16:12 DEBUG prawcore Data: None
+08-24 16:12 DEBUG prawcore Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /comments/160bmla/?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 1785
+08-24 16:12 DEBUG prawcore Response: 200 (1785 bytes)
+08-24 16:12 DEBUG prawcore Fetching: GET https://oauth.reddit.com/comments/1602cra/
+08-24 16:12 DEBUG prawcore Data: None
+08-24 16:12 DEBUG prawcore Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /comments/1602cra/?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 5290
+08-24 16:12 DEBUG prawcore Response: 200 (5290 bytes)
+08-24 16:12 DEBUG prawcore Fetching: GET https://oauth.reddit.com/comments/1607q2u/
+08-24 16:12 DEBUG prawcore Data: None
+08-24 16:12 DEBUG prawcore Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /comments/1607q2u/?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 6192
+08-24 16:12 DEBUG prawcore Response: 200 (6192 bytes)
+08-24 16:12 DEBUG prawcore Fetching: GET https://oauth.reddit.com/comments/15zc35s/
+08-24 16:12 DEBUG prawcore Data: None
+08-24 16:12 DEBUG prawcore Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+08-24 16:12 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /comments/15zc35s/?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 504 160
+08-24 16:12 DEBUG prawcore Response: 504 (160 bytes)
+08-24 16:12 WARNING prawcore Retrying due to 504 status: GET https://oauth.reddit.com/comments/15zc35s/
+08-24 16:12 DEBUG prawcore Sleeping: 1.39 seconds prior to retry
+08-24 16:13 DEBUG prawcore Fetching: GET https://oauth.reddit.com/comments/15zc35s/
+08-24 16:13 DEBUG prawcore Data: None
+08-24 16:13 DEBUG prawcore Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+08-24 16:13 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /comments/15zc35s/?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 60267
+08-24 16:13 DEBUG prawcore Response: 200 (60267 bytes)
+08-24 16:13 DEBUG prawcore Fetching: GET https://oauth.reddit.com/comments/15zh6h5/
+08-24 16:13 DEBUG prawcore Data: None
+08-24 16:13 DEBUG prawcore Params: {'limit': 2048, 'sort': 'confidence', 'raw_json': 1}
+08-24 16:13 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /comments/15zh6h5/?limit=2048&sort=confidence&raw_json=1 HTTP/1.1" 200 21848
+08-24 16:13 DEBUG prawcore Response: 200 (21848 bytes)
