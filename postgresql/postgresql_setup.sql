@@ -1,44 +1,34 @@
--- Table for individual comments
-CREATE TABLE comments (
-  uuid UUID PRIMARY KEY,
-  id TEXT,
-  name TEXT,
-  author TEXT,
-  body TEXT,
-  subreddit TEXT,
-  upvotes INT,
-  downvotes INT,
-  over_18 BOOLEAN,
-  timestamp FLOAT,
-  permalink TEXT,
-  sentiment_score FLOAT,
-  VADER_neg FLOAT,
-  VADER_neu FLOAT,
-  VADER_pos FLOAT,
-  NRC_anger FLOAT,
-  NRC_anticipation FLOAT,
-  NRC_disgust FLOAT,
-  NRC_fear FLOAT,
-  NRC_joy FLOAT,
-  NRC_sadness FLOAT,
-  NRC_surprise FLOAT,
-  NRC_trust FLOAT
+CREATE TABLE reddit_comments (
+    comment_pk SERIAL PRIMARY KEY,
+    id TEXT,
+    name TEXT,
+    author TEXT,
+    body TEXT,
+    subreddit TEXT,
+    upvotes INTEGER,
+    downvotes INTEGER,
+    over_18 BOOLEAN,
+    permalink TEXT,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    ingest_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    sentiment_score FLOAT,
+    anger FLOAT,
+    anticip FLOAT,
+    disgust FLOAT,
+    fear FLOAT,
+    joy FLOAT,
+    negative FLOAT,
+    positive FLOAT,
+    sadness FLOAT,
+    surprise FLOAT,
+    trust FLOAT
 );
 
--- Table for subreddit average sentiment
-CREATE TABLE subreddit_sentiment_avg (
-  uuid UUID PRIMARY KEY,
-  subreddit TEXT,
-  sentiment_score_avg FLOAT,
-  VADER_neg_avg FLOAT,
-  VADER_neu_avg FLOAT,
-  VADER_pos_avg FLOAT,
-  NRC_anger_avg FLOAT,
-  NRC_anticipation_avg FLOAT,
-  NRC_disgust_avg FLOAT,
-  NRC_fear_avg FLOAT,
-  NRC_joy_avg FLOAT,
-  NRC_sadness_avg FLOAT,
-  NRC_surprise_avg FLOAT,
-  NRC_trust_avg FLOAT
+
+
+CREATE TABLE subreddit_sentiment_avg6 (
+    subreddit TEXT,
+    sentiment_score_avg FLOAT,
+    uuid TEXT PRIMARY KEY,
+    ingest_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );

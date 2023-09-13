@@ -67,9 +67,7 @@ output_df = parsed_df.select(
         "comment_json.permalink",
     ) \
     .withColumn("uuid", make_uuid_udf()) \
-    .withColumn("api_timestamp", from_unixtime(col("timestamp").cast("int")).cast(TimestampType())) \
-    .withColumn("ingest_timestamp", current_timestamp()) \
-    .drop("timestamp")
+    .withColumn("ingest_timestamp", current_timestamp())
 
 # Adding sentiment score
 output_df = output_df.withColumn(
@@ -77,14 +75,14 @@ output_df = output_df.withColumn(
 )
 
 # Microbatching for output_df - set processing time to 5 seconds
-output_query = output_df.writeStream.trigger(processingTime="5 seconds") \
+output_query = output_df.writeStream.trigger(processingTime="1 seconds") \
     .foreachBatch(
         lambda batchDF, batchID: batchDF.write \
             .format("jdbc") \
             .option("url", "jdbc:postgresql://localhost/postgres") \
-            .option("dbtable", "comments3") \
+            .option("dbtable", "comments6") \
             .option("user", "postgres") \
-            .option("password", "") \
+            .option("password", "llamas8243") \
             .mode("append") \
             .save()
     ).outputMode("append").start()
@@ -96,14 +94,14 @@ summary_df = output_df.withWatermark("ingest_timestamp", "1 minute").groupBy("su
     .withColumn("ingest_timestamp", current_timestamp())
 
 # Microbatching for summary_df - set processing time to 5 seconds
-summary_query = summary_df.writeStream.trigger(processingTime="5 seconds") \
+summary_query = summary_df.writeStream.trigger(processingTime="1 seconds") \
     .foreachBatch(
         lambda batchDF, batchID: batchDF.write \
             .format("jdbc") \
             .option("url", "jdbc:postgresql://localhost/postgres") \
-            .option("dbtable", "subreddit_sentiment_avg3") \
+            .option("dbtable", "subreddit_sentiment_avg6") \
             .option("user", "postgres") \
-            .option("password", "") \
+            .option("password", "llamas8243") \
             .mode("append").save()
     ).outputMode("update").start()
 
