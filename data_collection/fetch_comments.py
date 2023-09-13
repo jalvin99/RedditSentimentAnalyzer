@@ -1,91 +1,77 @@
-# fetch_comments.py
-import logging
-
-import threading
-import time
 import praw
-from confluent_kafka import Producer
+import nltk
+from nltk.sentiment import SentimentIntensityAnalyzer
 from datetime import datetime
 from json import dumps
-from data_collection.sentiment_analysis import analyze_sentiment
+import numpy as np
+from nrclex import NRCLex
 
-from config.praw_config import reddit  # Assuming your config is in praw_config.py
+# Initialize Sentiment Analyzer
+nltk.download('vader_lexicon')
+analyzer = SentimentIntensityAnalyzer()
 
+# Initialize Reddit API
 reddit = praw.Reddit(
-
+    client_id="f9DgbQ1jB6PmDBEDp0DYKA",
+    client_secret="1yTlU0mWLg51wMh-Y6GAwE1Dhc4PQQ",
+    user_agent="sentimentanalyzertest",
+    username="FlippyTheRatMan",
+    password="Dontforgetthistime12@",
 )
 
-threads = []
-producer = Producer({"bootstrap.servers": "localhost:9092"})
+def analyze_sentiment(text):
 
-class RedditProducer:
+    sentences = nltk.sent_tokenize(text)
+    compound_scores = []
 
-    def __init__(self, subreddit_list: list[str], reddit: praw.Reddit, producer):
+    for sentence in sentences:
+        sentiment = analyzer.polarity_scores(sentence)
+        compound_scores.append(sentiment['compound'])
 
-        self.subreddit_list = subreddit_list
-        self.reddit = reddit
-        #self.comment_count = 0
-        #self.start_time = time.time()
-        self.log_file = "comment_log.txt"
-        self.producer = producer
+    avg_compound_score = np.mean(compound_scores)
 
-    @staticmethod
-    def delivery_report(err, msg):
-        if err is not None:
-            logging.error(f"Message delivery failed: {err}")
-        else:
-            logging.info(f"Message delivered to {msg.topic()}")
+    return avg_compound_score
 
-    def log_to_file(self, message):
-        with open(self.log_file, "a") as f:
-            f.write(f"{message}\n")
 
-    def start_streaming_threads(self):
+def analyze_emotion_nrc(text):
+    emotions_sum = {'anger': 0, 'anticip': 0, 'disgust': 0, 'fear': 0, 'joy': 0, 'negative': 0, 'positive': 0,
+                    'sadness': 0, 'surprise': 0, 'trust': 0}
 
-        for subreddit_name in self.subreddit_list:
-            thread = threading.Thread(target=self.start_stream, args=(subreddit_name,))
-            thread.start()
-            threads.append(thread)
+    emotion = NRCLex(text).affect_frequencies
 
-        for thread in threads:
-            thread.join()
+    for key in emotions_sum.keys():
+        if key in emotion:
+            emotions_sum[key] = emotion[key]
 
-    def start_stream(self, subreddit_name) -> None:
-        subreddit = self.reddit.subreddit(subreddit_name)
-        comment: praw.models.Comment
+    return emotions_sum
+
+def fetch_comments(subreddit_list):
+    for subreddit_name in subreddit_list:
+        subreddit = reddit.subreddit(subreddit_name)
         for comment in subreddit.stream.comments(skip_existing=True):
-            #self.comment_count += 1
 
-            #elapsed_time = time.time() - self.start_time
-            #comments_per_second = self.comment_count / elapsed_time
+            sentiment_score = analyze_sentiment(comment.body)
+            emotion_scores = analyze_emotion_nrc(comment.body)
 
-            # Log metrics to the file
-            #self.log_to_file(
-            #    f"Total Comments: {self.comment_count}, Elapsed Time: {elapsed_time:.2f} seconds, Comments per Second: {comments_per_second:.2f}")
+            # Debug: Print each emotion score for the current comment
+            # print(f"Debug: Comment ID: {comment.id}")
+            for emotion, score in emotion_scores.items():
+                print(f"Debug: {emotion}: {score}")
 
-            # Optional: Limit the logging frequency
+            comment_json = {
+                "id": comment.id,
+                "name": comment.name,
+                "author": comment.author.name if comment.author else "Deleted",
+                "body": comment.body,
+                "subreddit": comment.subreddit.display_name,
+                "upvotes": comment.ups,
+                "downvotes": comment.downs,
+                "over_18": comment.over_18,
+                "timestamp": comment.created_utc,
+                "permalink": comment.permalink,
+                "sentiment_score": sentiment_score
+            }
 
-            try:
-                comment_json = {
-                    "id": comment.id,
-                    "name": comment.name,
-                    "author": comment.author.name,
-                    "body": comment.body,
-                    "subreddit": comment.subreddit.display_name,
-                    "upvotes": comment.ups,
-                    "downvotes": comment.downs,
-                    "over_18": comment.over_18,
-                    "timestamp": comment.created_utc,
-                    "permalink": comment.permalink,
-                }
+            comment_json.update(emotion_scores)
 
-                logging.info(f"subreddit: {subreddit_name}, comment: {comment_json}")
-                self.producer.produce("reddit-comments", key=comment.id, value=dumps(comment_json),
-                                      callback=self.delivery_report)
-            except Exception as e:
-                logging.error(f"An error occurred: {str(e)}")
-
-if __name__ == "__main__":
-    subreddit_list = ['all']
-    reddit_producer = RedditProducer(subreddit_list, reddit, producer)
-    reddit_producer.start_streaming_threads()
+            yield comment_json

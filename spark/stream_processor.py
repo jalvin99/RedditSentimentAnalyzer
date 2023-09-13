@@ -35,9 +35,7 @@ def analyze_emotion_nrc(text):
 
     num_sentences = len(sentences)
     avg_emotions = {key: emotions_sum[key] / num_sentences for key in emotions_sum.keys()}
-    return [avg_emotions[e] for e in
-            ('anger', 'anticip', 'disgust', 'fear', 'joy', 'negative', 'positive', 'sadness', 'surprise', 'trust')]
-
+    return avg_emotions
 
 def main():
     nltk.download('vader_lexicon')
