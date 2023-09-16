@@ -5,20 +5,26 @@ from datetime import datetime
 from json import dumps
 import numpy as np
 from nrclex import NRCLex
+from dotenv import load_dotenv
+import os
 
-# Initialize Sentiment Analyzer
+#load environment variables
+load_dotenv("prawconfig.env")
+
+# initialize sentiment analyzer
 nltk.download('vader_lexicon')
 analyzer = SentimentIntensityAnalyzer()
 
-# Initialize Reddit API
+# Initialize Reddit API via env variables
 reddit = praw.Reddit(
-    client_id="f9DgbQ1jB6PmDBEDp0DYKA",
-    client_secret="1yTlU0mWLg51wMh-Y6GAwE1Dhc4PQQ",
-    user_agent="sentimentanalyzertest",
-    username="FlippyTheRatMan",
-    password="Dontforgetthistime12@",
+    client_id=os.getenv("REDDIT_CLIENT_ID"),
+    client_secret=os.getenv("REDDIT_CLIENT_SECRET"),
+    user_agent=os.getenv("REDDIT_USER_AGENT"),
+    username=os.getenv("REDDIT_USERNAME"),
+    password=os.getenv("REDDIT_PASSWORD"),
 )
 
+#vader is supposedly more accurate when blocks of text are tokenized into sentences
 def analyze_sentiment(text):
 
     sentences = nltk.sent_tokenize(text)
@@ -28,10 +34,12 @@ def analyze_sentiment(text):
         sentiment = analyzer.polarity_scores(sentence)
         compound_scores.append(sentiment['compound'])
 
-    avg_compound_score = np.mean(compound_scores)
+    if compound_scores:
+        avg_compound_score = np.mean(compound_scores)
+    else:
+        avg_compound_score = 0
 
     return avg_compound_score
-
 
 def analyze_emotion_nrc(text):
     emotions_sum = {'anger': 0, 'anticip': 0, 'disgust': 0, 'fear': 0, 'joy': 0, 'negative': 0, 'positive': 0,
@@ -53,17 +61,12 @@ def fetch_comments(subreddit_list):
             sentiment_score = analyze_sentiment(comment.body)
             emotion_scores = analyze_emotion_nrc(comment.body)
 
-            # Debug: Print each emotion score for the current comment
-            # print(f"Debug: Comment ID: {comment.id}")
-            for emotion, score in emotion_scores.items():
-                print(f"Debug: {emotion}: {score}")
-
             comment_json = {
                 "id": comment.id,
                 "name": comment.name,
                 "author": comment.author.name if comment.author else "Deleted",
                 "body": comment.body,
-                "subreddit": comment.subreddit.display_name,
+                "subreddit": comment.subreddit.display_name.lower(),
                 "upvotes": comment.ups,
                 "downvotes": comment.downs,
                 "over_18": comment.over_18,

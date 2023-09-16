@@ -1,21 +1,24 @@
 import psycopg2
 from psycopg2 import sql
+from datetime import datetime
+from dotenv import load_dotenv
+import os
 
-# Initialize the database connection
+load_dotenv("dbconfig.env")
+
+# initializing db connection through env variables
 conn = psycopg2.connect(
-    dbname="postgres",  # Update with your DB name
-    user="postgres",
-    password="llamas8243",
-    host="localhost",
-    port="5432"
+    dbname=os.getenv("DB_NAME"),
+    user=os.getenv("DB_USER"),
+    password=os.getenv("DB_PASSWORD"),
+    host=os.getenv("DB_HOST"),
+    port=os.getenv("DB_PORT")
 )
 
 cursor = conn.cursor()
 
-from datetime import datetime
-
 def write_to_db(comment):
-    # Convert the Unix timestamp to a PostgreSQL-compatible timestamp
+    # converting unix timestamp into PostgreSQL compliant timestamp form
     comment_timestamp = datetime.fromtimestamp(comment['timestamp']).strftime('%Y-%m-%d %H:%M:%S')
 
     insert_query = sql.SQL(
@@ -25,7 +28,7 @@ def write_to_db(comment):
     cursor.execute(insert_query, (
         comment['id'], comment['name'], comment['author'], comment['body'],
         comment['subreddit'], comment['upvotes'], comment['downvotes'],
-        comment['over_18'], comment_timestamp['comment_timestamp'], comment['permalink'],
+        comment['over_18'], comment_timestamp, comment['permalink'],
         comment['sentiment_score'], comment['anger'], comment['anticip'],
         comment['disgust'], comment['fear'], comment['joy'], comment['negative'],
         comment['positive'], comment['sadness'], comment['surprise'], comment['trust']
@@ -34,7 +37,7 @@ def write_to_db(comment):
     conn.commit()
 
 if __name__ == "__main__":
-    from fetch_comments import fetch_comments  # Make sure fetch_comments.py is in the same directory
+    from fetch_comments import fetch_comments
     subreddit_list = ['all']
     for comment in fetch_comments(subreddit_list):
         write_to_db(comment)
