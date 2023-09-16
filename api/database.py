@@ -1,7 +1,10 @@
 from databases import Database
+from dotenv import load_dotenv
+import os
 from sqlalchemy import create_engine, MetaData
 
-DATABASE_URL = "postgresql://postgres:llamas8243@localhost/postgres"
+load_dotenv("mainconfig.env")
+DATABASE_URL = os.getenv("DATABASE_URL")
 
 database = Database(DATABASE_URL)
 metadata = MetaData()
