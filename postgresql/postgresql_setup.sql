@@ -23,12 +23,3 @@ CREATE TABLE reddit_comments (
     surprise FLOAT,
     trust FLOAT
 );
-
-
-
-CREATE TABLE subreddit_sentiment_avg6 (
-    subreddit TEXT,
-    sentiment_score_avg FLOAT,
-    uuid TEXT PRIMARY KEY,
-    ingest_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);

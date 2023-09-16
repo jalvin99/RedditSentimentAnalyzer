@@ -12,7 +12,6 @@ import traceback
 logging.basicConfig(level=logging.DEBUG)
 logging.getLogger('databases').setLevel(logging.INFO)
 
-
 app = FastAPI()
 
 origins = [
@@ -26,7 +25,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 
 @app.on_event("startup")
 async def startup():
@@ -42,7 +40,6 @@ async def get_db():
     yield database
 
 async def fetch_average_sentiment(subreddit, db):
-    print("1")
     query = '''
     SELECT AVG(sentiment_score) 
     FROM reddit_comments 
@@ -61,13 +58,18 @@ async def fetch_average_emotions(subreddit, db):
     values = await db.fetch_one(query=query, values={'subreddit': subreddit})
     return dict(values) if values else {'joy': 0, 'sadness': 0, 'anger': 0, 'surprise': 0, 'fear': 0, 'disgust': 0, 'trust': 0, 'anticipation': 0}
 
-
+#endpoint for populating CommentsList component in frontend
 @app.get("/comments")
-async def read_comments(sort_by: str = Query(..., alias="sort_by"),
+async def read_comments(subreddit: str = Query(None, alias="subreddit"),
+                        sort_by: str = Query(..., alias="sort_by"),
                         time_range: str = Query(..., alias="time_range"),
+                        keyword: str = Query(None, alias="keyword"),
                         offset: int = 0, limit: int = 10, db: Database = Depends(get_db)):
+
     valid_sort_columns = ["sentiment_score", "joy", "sadness", "anger", "surprise", "fear", "disgust", "anticip",
                           "trust"]
+
+    #protecting against SQL injection
     if sort_by not in valid_sort_columns:
         raise HTTPException(status_code=400, detail="Invalid sort_by value")
 
@@ -88,20 +90,24 @@ async def read_comments(sort_by: str = Query(..., alias="sort_by"),
            anger, anticip, disgust, fear, joy, sadness, surprise, trust
     FROM reddit_comments 
     WHERE timestamp BETWEEN :start_date AND :end_date
-    ORDER BY {sort_by} DESC
-    OFFSET :offset LIMIT :limit;
     '''
 
     params = {'start_date': start_date, 'end_date': end_date, 'offset': offset, 'limit': limit}
 
-    print("Executing SQL Query:")
-    print(query)
-    print("With Parameters:")
-    print(params)
+    if subreddit:
+        query += " AND subreddit = :subreddit"
+        params["subreddit"] = subreddit
 
+    if keyword:
+        keyword = f"%{keyword}%"
+        query += " AND body LIKE :keyword"
+        params["keyword"] = keyword
+
+    query += f" ORDER BY {sort_by} DESC OFFSET :offset LIMIT :limit;"
+
+    print(f"Query: {query}")
+    print(f"Params: {params}")
     comments = await db.fetch_all(query=query, values=params)
-
-    print(f"Debug comments:{comments}")
 
     comments_dict_list = [
         {"author_name": x["author"], "content": x["body"], "upvotes": x["upvotes"], "downvotes": x["downvotes"],
@@ -110,8 +116,10 @@ async def read_comments(sort_by: str = Query(..., alias="sort_by"),
          "disgust": x["disgust"], "fear": x["fear"], "joy": x["joy"], "sadness": x["sadness"],
          "surprise": x["surprise"],
          "trust": x["trust"]} for x in comments]
-    print(f"Debug comments dict list:{comments_dict_list}")
+
     return {"comments": comments_dict_list}
+
+#endpoint for data used in SentimentChart, EmotionSpiderChart, and EmotionAreaChart components
 @app.websocket("/ws/{subreddit}")
 async def websocket_endpoint(websocket: WebSocket, subreddit: str, keyword: str = Query(None),
                              db: Database = Depends(get_db)):
