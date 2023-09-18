@@ -1,0 +1,46 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:13
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./backend/postgresql/postgresql_setup.sql:/docker-entrypoint-initdb.d/postgresql_setup.sql
+    environment:
+      POSTGRES_PASSWORD: bZm01ql!
+      POSTGRES_DB: postgres
+    env_file:
+      - ./backend/data_collection/dbconfig.env
+
+  api:
+    build: ./backend
+    command: ["/wait-for-it.sh", "uvicorn", "api.main:app", "--host", "0.0.0.0", "--reload"]
+    volumes:
+      - ./backend:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    env_file:
+      - ./backend/api/mainconfig.env
+
+  data_collector:
+    build: ./backend
+    command: ["/wait-for-it.sh", "python", "data_collection/write_to_database.py"]
+    volumes:
+      - ./backend:/app
+    depends_on:
+      - db
+    env_file:
+      - ./backend/data_collection/dbconfig.env
+      - ./backend/data_collection/prawconfig.env
+
+  frontend:
+    build: ./frontend/client
+    ports:
+      - "3000:3000"
+    env_file:
+      - ./frontend/client/.env
+
+volumes:
+  postgres_data:
