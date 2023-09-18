@@ -13,7 +13,7 @@ This project is a streaming data pipline that fetches live comments from Reddit'
 
 # Architecture
 
-![reddit_sentiment_analysis_pipeline_architecture](https://raw.githubusercontent.com/nama1arpit/reddit-streaming-pipeline/main/images/Reddit%20Sentiment%20Analysis%20Data%20Pipeline.drawio.png)
+![reddit_sentiment_analysis_pipeline_architecture](https://github.com/jalvin99/RedditSentimentAnalyzer/blob/master/images/RedditSentimentAnalyzer_drawio.png?raw=true)
 
 The above diagram illustrates the architecture of the streaming data pipeline. 
 
