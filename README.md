@@ -37,6 +37,8 @@ These three charts display the moving average of all comments in the specified s
 
 A comments list component allows users to find all comments posted in a particular subreddit over a specified period of time that contain a given keyword.
 
+![reddit_sentiment_analysis_demo](https://github.com/jalvin99/RedditSentimentAnalyzer/blob/master/images/appdemo.gif?raw=true)
+
 # Installation and Setup
 ## System Requirements
 - [Docker Engine](https://www.docker.com/)
