@@ -4,7 +4,10 @@ from fastapi import FastAPI, WebSocket, WebSocketDisconnect, Depends, Query, HTT
 from fastapi.middleware.cors import CORSMiddleware
 from databases import Database
 
-from database import database
+from dotenv import load_dotenv
+import os
+from sqlalchemy import create_engine, MetaData
+
 import logging
 import asyncio
 import traceback
@@ -25,6 +28,14 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+load_dotenv("mainconfig.env")
+DATABASE_URL = os.getenv("DATABASE_URL")
+
+database = Database(DATABASE_URL)
+metadata = MetaData()
+
+engine = create_engine(DATABASE_URL)
 
 @app.on_event("startup")
 async def startup():
