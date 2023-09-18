@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&display=swap');
+
+body {
+  background-color: #1e1e1e;
+  color: #cfcfcf;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: auto;
+  padding: 2vh; /* percentage of the viewport height */
+}
+
+.container {
+  flex: 2.5;
+  padding-right: 1vw; /* percentage of the viewport width */
+}
+
+.list-container {
+  flex: 1;
+  padding: 1vh; /* percentages of the viewport */
+  background-color: #2d2d2d;
+  overflow-x: auto;
+  border-radius: 1vw;
+  box-shadow: 0 0.4vw 0.8vw 0 rgba(0, 0, 0, 0.3);
+}
+
+.commentsList {
+  height: calc(100vh - 4vh - 4vh); 
+  width: 90%;
+  overflow-y: auto;
+  word-wrap: break-word;
+}
+
+.website-title {
+  flex: 1;
+  text-align: center;
+  font-family: 'Archivo';  /* This makes it take up all available space to the left */
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  background-color: #2e2e2e;
+  padding: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.empty-div {
+  flex: 1;
+  background-color: #2e2e2e;
+  padding: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+  flex: 1;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  background-color: #2e2e2e;
+  color: #cfcfcf;
+  outline: none;
+}
+
+.top-chart {
+  margin-bottom: 2vh;
+}
+
+.bottom-charts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chart {
+  flex: 1;
+  margin: 1vh;
+  box-shadow: 0 0.4vw 0.8vw 0 rgba(0, 0, 0, 0.3);
+  border-radius: 1vw;
+}
+
+/* Media query for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+  
+  .container, .list-container, .chart {
+    margin-top: 1vh;
+    flex: 1;
+  }
+}

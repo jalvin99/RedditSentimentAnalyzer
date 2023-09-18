@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "apexcharts": "^3.42.0",
+    "react-apexcharts": "^1.4.1",
+    "socket.io-client": "^4.7.2"
+  }
+}
