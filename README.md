@@ -19,15 +19,12 @@ The above diagram illustrates the architecture of the streaming data pipeline.
 
 All applications are containerized into **Docker** containers.
 
-1. **Data Ingestion :** A Python script called *fetch_comments* connects to the Reddit API using credentials provided in a `prawconfig.env` file. It takes a stream of received comments and performs sentiment analysis and emotion analysis using the NLTK and NRCLex libraries. The comment along with its new sentiment and emotion scores are converted into JSON form. [PRAW](https://praw.readthedocs.io/en/stable/) python library is used for interacting with Reddit API.
-
-A containerized Python application called *write_to_database* uses *fetch_comments* to obtain the stream of processed reddit comments in JSON form and injects the fields into a **PostgreSQL** table.
+1. **Data Ingestion :** A Python script called *fetch_comments* connects to the Reddit API using credentials provided in a `prawconfig.env` file. It takes a stream of received comments and performs sentiment analysis and emotion analysis using the NLTK and NRCLex libraries. The comment along with its new sentiment and emotion scores are converted into JSON form. [PRAW](https://praw.readthedocs.io/en/stable/) python library is used for interacting with Reddit API. A containerized Python application called *write_to_database* uses *fetch_comments* to obtain the stream of processed reddit comments in JSON form and injects the fields into a **PostgreSQL** table.
 
 2. **Processed Data Storage :** A simple **PostgreSQL** table called reddit_comments holds all the original data initially received in *fetch_comments* along with 11 new fields - sentiment_score, anger, anticip, disgust, fear, joy, negative, positive, sadness, surprise, and trust.
 
-3. **Backend API :** A containerized Python application called *main.py* sets up **FastAPI** endpoints for the frontend to obtain sentiment and emotion data for comments. 
-
-Two endpoints are provided:
+3. **Backend API :** A containerized Python application called *main.py* sets up **FastAPI** endpoints for the frontend to obtain sentiment and emotion data for comments.
+   Two endpoints are provided:
     - A **WebSocket** endpoint takes a specified subreddit in the url. On 1 second intervals, it calculates the average sentiment score and emotion scores of all comments written to the PostgreSQL table over the last 60 seconds. It returns this data in JSON form.
     - A HTTP GET endpoint that takes a variety of fields in the url, including subreddit, keyword, time range and others. The endpoint function returns a list of dictionaries containing all comments filtered by those fields. This is converted into JSON by FastAPI.
 
