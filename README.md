@@ -1,7 +1,7 @@
 # Reddit Sentiment Analysis Application
 ## Project Overview
 
-This project is a streaming data pipline that fetches live comments from Reddit's 'r/all' subreddit using the Python Reddit API Wrapper. It performs sentiment analysis on each comment's body text using the NLTK library and emotion analysis using NRCLex. The resulting scores are appended to the comment data and written to a PostgreSQL table. Users can view a moving average of any subreddit's sentiment and emotion scores in the React frontend through various charting components. Users can also specify a particular keyword and emotion to view a list of comments ranked by that emotion. This project takes advantage of containerzation using Docker.
+This project is a streaming data pipline that fetches live comments from Reddit's 'r/all' subreddit using the Python Reddit API Wrapper. It performs sentiment analysis on each comment's body text using the NLTK library and emotion analysis using NRCLex. The resulting scores are appended to the comment data and written to a PostgreSQL table. Users can view a moving average of any subreddit's sentiment and emotion scores in the React frontend through various charting components. Users can also specify a particular keyword and emotion to view a list of comments ranked by that emotion. This project takes advantage of containerization using Docker.
 
 # Table of Contents
 - [Project Overview](#project-overview)
