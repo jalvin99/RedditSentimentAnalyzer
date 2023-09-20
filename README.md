@@ -47,7 +47,7 @@ The project was tested with the following local system configuration:
 - CPU cores: 4
 - Graphics card: NVIDIA GeForce RTX 3050
 
-To setup the project locally, first you will have to add .env files for setting and accessing up the database as well as enabling connection to the Reddit API. Instructions are provided in the three .env.template files in the backend/ directory. 
+To setup the project locally, first you will have to add .env files for setting up and accessing the database as well as enabling connection to the Reddit API. Instructions for doing so are provided in the three .env.template files in the backend/ directory. 
 
 For prawconfig.env, you'll need to obtain Reddit Developer credentials by creating an application at https://www.reddit.com/prefs/apps/.
 
